@@ -1,2 +1,8 @@
-<h1>Articles#new</h1>
-<p>Find me in app/views/articles/new.html.erb</p>
+<h1><center>New article</center></h1>
+
+<%= render 'form', article: @article %>
+
+<hr>
+<%= link_to articles_path do %>
+  <i class="fa fa-history"></i> Back to articles
+<% end %>

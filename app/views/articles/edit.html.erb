@@ -1,2 +1,12 @@
-<h1>Articles#edit</h1>
-<p>Find me in app/views/articles/edit.html.erb</p>
+<center><h1>Editing article</h1></center>
+
+<%= render 'form', article: @article %>
+
+<hr>
+<%= link_to articles_path do %>
+  <i class="fa fa-history"></i> Back to articles
+<% end %>
+<br>
+<%= link_to article_path(@article) do %>
+  <i class="fa fa-history"></i> Show updated article
+<% end %>
